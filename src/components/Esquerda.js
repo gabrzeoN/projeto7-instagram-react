@@ -1,12 +1,12 @@
 const stories = [
-    {imagem: "assets/img/9gag.svg", usuario: "9gag"},
-    {imagem: "assets/img/meowed.svg", usuario: "meowed"},
-    {imagem: "assets/img/barked.svg", usuario: "barked"},
-    {imagem: "assets/img/nathanwpylestrangeplanet.svg", usuario: "nathanwpylestrangeplanet"},
-    {imagem: "assets/img/wawawicomics.svg", usuario: "wawawicomics"},
-    {imagem: "assets/img/respondeai.svg", usuario: "respondeai"},
-    {imagem: "assets/img/filomoderna.svg", usuario: "filomoderna"},
-    {imagem: "assets/img/memeriagourmet.svg", usuario: "memeriagourmet"}
+    { imagem: "assets/img/9gag.svg", usuario: "9gag" },
+    { imagem: "assets/img/meowed.svg", usuario: "meowed" },
+    { imagem: "assets/img/barked.svg", usuario: "barked" },
+    { imagem: "assets/img/nathanwpylestrangeplanet.svg", usuario: "nathanwpylestrangeplanet" },
+    { imagem: "assets/img/wawawicomics.svg", usuario: "wawawicomics" },
+    { imagem: "assets/img/respondeai.svg", usuario: "respondeai" },
+    { imagem: "assets/img/filomoderna.svg", usuario: "filomoderna" },
+    { imagem: "assets/img/memeriagourmet.svg", usuario: "memeriagourmet" }
 ];
 
 const posts = [
@@ -34,8 +34,8 @@ export default function Esquerda() {
             <div class="stories">
                 {
                     stories.map((story) => {
-                        const {imagem, usuario} = story;
-                        return(
+                        const { imagem, usuario } = story;
+                        return (
                             <Story imagem={imagem} usuario={usuario} />
                         );
                     })
@@ -45,14 +45,14 @@ export default function Esquerda() {
                 </div>
             </div>
 
-            <div class="posts">      
+            <div class="posts">
                 {
                     posts.map((post) => {
                         const {
                             imagemUsuario, nomeUsuario, imagemConteudo,
                             imagemQuemCurtiu, quemCurtiu, quantidadeCurtidas
                         } = post;
-                        return(
+                        return (
                             <Post
                                 imagemUsuario={imagemUsuario}
                                 nomeUsuario={nomeUsuario}
@@ -63,14 +63,14 @@ export default function Esquerda() {
                             />
                         );
                     })
-                }   
+                }
             </div>
         </div>
     );
 }
 
 function Story(props) {
-    const {imagem, usuario} = props;
+    const { imagem, usuario } = props;
     return (
         <div class="story">
             <div class="imagem">
