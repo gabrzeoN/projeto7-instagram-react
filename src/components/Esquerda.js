@@ -15,6 +15,7 @@ export default function Esquerda() {
                     <ion-icon name="chevron-forward-circle"></ion-icon>
                 </div>
             </div>
+            
             <div class="posts">
                 <Post
                     imagemUsuario="assets/img/meowed.svg"
